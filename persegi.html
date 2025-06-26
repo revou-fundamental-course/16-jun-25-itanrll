@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Persegi - Katik</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <div id="navbar"></div>
+
+    <main>
+        <div class="back-button-container">
+        <a href="index.html" class="back-button">← Kembali ke Beranda</a>
+        </div>
+        <section class="dual-form">
+            <!-- Luas Persegi -->
+            <div class="card-form">
+            <img src="img/persegi.png" alt="Gambar Persegi" width="100%" />
+            <p><strong>Rumus Luas Persegi:</strong><br>L = S × S</p>
+            <p><small>
+                L = Luas<br>
+                S = Panjang Sisi
+            </small></p>
+
+            <h3>Hitung Luas Persegi</h3>
+            <form id="formLuas">
+                <label for="sisiLuas">Sisi (cm):</label>
+                <input type="number" id="sisiLuas" required />
+                
+                <button type="submit">Hitung</button>
+                <button type="reset" id="resetLuas">Reset</button>
+
+                <div id="hasilLuas" class="result"></div>
+            </form>
+            </div>
+
+            <!-- Keliling Persegi -->
+            <div class="card-form">
+            <img src="img/persegi.png" alt="Gambar Persegi" width="100%" />
+            <p><strong>Rumus Keliling Persegi:</strong><br>K = 4 × S</p>
+            <p><small>
+                K = Keliling<br>
+                S = Panjang Sisi
+            </small></p>
+
+            <h3>Hitung Keliling Persegi</h3>
+            <form id="formKeliling">
+                <label for="sisiKeliling">Sisi (cm):</label>
+                <input type="number" id="sisiKeliling" required />
+                
+                <button type="submit">Hitung</button>
+                <button type="reset" id="resetKeliling">Reset</button>
+
+                <div id="hasilKeliling" class="result"></div>
+            </form>
+            </div>
+        </section>
+
+        </main>
+    <div id="footer"></div>
+  </div>
+
+  <script src="js/script.js"></script> <!-- untuk load navbar/footer -->
+  <script src="js/persegi.js"></script> <!-- khusus logika persegi -->
+</body>
+</html>

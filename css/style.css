@@ -1,25 +1,235 @@
-.main-header{
-    text-align: center;
+html, body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  color: #333;
+  height: 100%;
 }
 
-.nav{
-    display: flex;
+.navbar {
+  background-color: #18a2bb;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer {
+background-color: rgba(0, 0, 0, 0);
+  color: black;
+  text-align: center;
+  padding: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 10px;
+  min-height: calc(100vh - 170px); /* 100vh dikurangi tinggi navbar dan footer */
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* min 1 layar penuh */
+}
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.menu-button {
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: #18a2bb;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+  background-color: #18a2bb;
+}
+
+.content {
+  max-width: 600px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: slideFadeIn 0.8s ease-out both;
+}
+
+.content h1 {
+  margin-bottom: 10px;
+  font-size: 1.8em;
+  color: #333;
+}
+
+.content p {
+  color: #555;
+}
+
+form label {
+  font-weight: 600;
+}
+
+input[type="number"] {
+  padding: 10px;
+  width: 100%;
+  margin: 8px 0 16px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button[type="submit"] {
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+.dual-form {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px auto;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.card-form {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  animation: slideFadeIn 0.8s ease-out both;
+  flex: 1 1 45%; /* Agar bisa fleksibel dan responsif */
 
 }
 
-.nav a{
-    border-radius: 8px;
-    height: 50px;
-    align-content: center;
-    background-color: bisque;
-    color: black;
-    text-decoration: none;
+.card-form h2 {
+  margin-bottom: 15px;
+  font-size: 1.3em;
+  text-align: center;
 }
 
-main{
-    display: flex;
+.card-form h3 {
+  text-align: center;
+  margin-top: 10px;
 }
 
-.main-section{
-    flex: 1;
+.card-form input {
+  padding: 8px 10px;
+  width: 100%;
+  margin: 6px 0 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+form label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 4px;
+}
+
+
+.card-form button {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card-form button:hover {
+  background-color: #0056b3;
+}
+
+.card-form button:last-of-type {
+  background-color: orange;
+}
+
+.result {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.card-form img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .dual-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-form {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+}
+
+.back-button-container {
+  text-align: left;
+  margin: 20px 20px;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #18a2bb;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #065d6d;
 }

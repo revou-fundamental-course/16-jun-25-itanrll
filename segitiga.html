@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Persegi - Katik</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <div id="navbar"></div>
+
+    <main>
+        <div class="back-button-container">
+        <a href="index.html" class="back-button">← Kembali ke Beranda</a>
+        </div>
+        <section class="dual-form">
+            <!-- Card Luas Segitiga -->
+            <div class="card-form">
+            <img src="img/segitiga.png" alt="Segitiga" width="100%" />
+            <p><strong>Rumus Luas:</strong><br>L = ½ × a × t</p>
+            <p><small>L = Luas, a = Alas, t = Tinggi</small></p>
+
+            <h3>Hitung Luas Segitiga</h3>
+            <form id="formLuas">
+                <label for="alas">Alas (cm):</label>
+                <input type="number" id="alas" required />
+
+                <label for="tinggi">Tinggi (cm):</label>
+                <input type="number" id="tinggi" required />
+
+                <button type="submit">Hitung</button>
+                <button type="reset" id="resetLuas">Reset</button>
+
+                <div id="hasilLuas" class="result"></div>
+            </form>
+            </div>
+
+            <!-- Card Keliling Segitiga -->
+            <div class="card-form">
+            <img src="img/segitiga.png" alt="Segitiga" width="100%" />
+            <p><strong>Rumus Keliling:</strong><br>K = S₁ + S₂ + S₃</p>
+            <p><small>K = Keliling, S₁–S₃ = sisi segitiga</small></p>
+
+            <h3>Hitung Keliling Segitiga</h3>
+            <form id="formKeliling">
+                <label for="s1">Sisi A (cm):</label>
+                <input type="number" id="s1" required />
+
+                <label for="s2">Sisi B (cm):</label>
+                <input type="number" id="s2" required />
+
+                <label for="s3">Sisi C (cm):</label>
+                <input type="number" id="s3" required />
+
+                <button type="submit">Hitung</button>
+                <button type="reset" id="resetKeliling">Reset</button>
+
+                <div id="hasilKeliling" class="result"></div>
+            </form>
+            </div>
+        </section>
+        
+        </main>
+
+    <div id="footer"></div>
+  </div>
+
+  <script src="js/script.js"></script> <!-- untuk load navbar/footer -->
+  <script src="js/segitiga.js"></script> <!-- khusus logika persegi -->
+</body>
+</html>

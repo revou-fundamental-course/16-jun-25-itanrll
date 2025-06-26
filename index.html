@@ -1,38 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Materials - Ita</title>
-
-    <link rel="stylesheet" href="css\style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Katik</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animation.css" />
 </head>
 <body>
-    <!-- head content -->
-    <header class="main-header">
-        <h1>Welcome to My Katik</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A animi deleniti autem fugiat exercitationem? Eveniet voluptatibus unde qui ipsa in, voluptates consequuntur veritatis, placeat expedita iure, soluta rerum hic vel!</p>
-        <nav>
-            <a href="">Segitiga</a>
-            <a href="">Jajar Genjang</a>
-        </nav>
-    </header>
+  <!-- Navbar akan dimuat dari navbar.html -->
+   <div class="wrapper">
+       <div id="navbar"></div>
+     
+       <main>
+         <section class="welcome-section">
+           <h1 class="animate-text">Selamat Datang di Katik!</h1>
+           <p class="fade-in">Katik merupakan Web Apps sederhana yang berfungsi untuk menghitung luas dan keliling Bangun Datar.</p>
 
-    <!-- main content -->
-     <main>
-        <!-- luas -->
-        <section>
-            <header></header>
-            <div></div>
-            <form action=""></form>
-        </section>
+           <div class="menu-container">
+                <a href="persegi.html" class="menu-button">Persegi</a>
+                <a href="segitiga.html" class="menu-button">Segitiga</a>
+            </div>
+         </section>
+       </main>
+     
+       <!-- Footer akan dimuat dari footer.html -->
+       <div id="footer"></div>
+   </div>
 
-        <!-- keliling -->
-        <search></search>
-     </main>
-
-     <!-- footer content  -->
-      <footer></footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
