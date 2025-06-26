@@ -34,13 +34,9 @@ background-color: rgba(0, 0, 0, 0);
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 10px 5px 10px;
   text-align: center;
-  padding: 0 10px;
-  min-height: calc(100vh - 170px); /* 100vh dikurangi tinggi navbar dan footer */
+  flex: 1;
 }
 .wrapper {
   display: flex;
@@ -163,11 +159,18 @@ button[type="submit"]:hover {
   box-sizing: border-box;
 }
 
-
 form label {
   font-weight: 600;
   display: block;
   margin-bottom: 4px;
+}
+
+body.halaman-utama main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 
